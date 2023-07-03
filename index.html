@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="header">
+                <h1>Alarm Clock</h1>
+            </div>
+            <div id="current_time"></div>
+            <h1>Set Alarm (24-Hour Clock)</h1>
+            <form action="" class="user_input">
+                <input type="number" id="hour" max="23" min="00" placeholder="HH">
+                <input type="number" id="min" max="59" min="00" placeholder="MM">
+                <input type="number" id="sec" max="59" min="00" placeholder="SS">
+                <br />
+                <button type="submit">Set Alarm</button>
+                <button type="reset" onclick="resetAlarm()">Stop Alarm</button>
+            </form>
+             
+            <h1>Upcoming Alaram</h1>
+            <ul class="set_alarms_list">
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
